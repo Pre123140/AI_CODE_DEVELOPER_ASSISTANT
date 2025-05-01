@@ -106,12 +106,3 @@ MIT — for personal/educational use only. Contact for commercial licensing.
 
 ---
 
-### 📌 GitHub Short Description
-
-> A local AI-powered code assistant built with Mistral-7B and LangChain. Explain, fix, and optimize Python code using a Streamlit UI — with both rule-based and LLM-based modes. 100% offline.
-
----
-
-Let me know if you'd like a badge set, social preview, or GitHub actions added next!
-
-
