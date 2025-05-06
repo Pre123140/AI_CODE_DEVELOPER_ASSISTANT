@@ -1,74 +1,66 @@
-# 🧠 AI-Powered Code & Developer Assistant
+# 🧠 AI-Powered Business Intelligence & Decision Support Agent
 
-A local GenAI-powered coding agent that helps you **analyze, debug, and optimize Python code** — with or without LLMs. Designed for developers, learners, and security-conscious teams, it uses `mistral-7b-openorca.Q4_K_M.gguf` to run completely offline.
+An interactive AI agent that helps users **analyze uploaded business data, generate insights, visualize trends, and support real-time decisions** — powered by `Mistral-7B`, LangChain, RAG (Retrieval Augmented Generation), and Streamlit. Users can upload CSVs and get instant responses from an LLM-powered chatbot trained on their data.
 
 ---
 
 ## 🎯 Project Objective
-To create a dual-mode code assistant that:
-- Understands and explains code behavior line-by-line
-- Automatically detects and fixes bugs in code
-- Refactors and optimizes scripts for readability and performance
-- Engages in contextual multi-turn conversations (Agent Mode)
+To create a dataset-agnostic GenAI agent that:
+- Understands business data dynamically upon upload
+- Provides summary insights, trends, and patterns
+- Answers real-time queries using RAG and LLMs
+- Generates visual charts and downloadable reports
 
 ---
 
 ## 🚀 Key Features
-- **Explain Mode** – Understand any Python code snippet
-- **Fix Mode** – Auto-debug common issues and broken logic
-- **Optimize Mode** – Refactor for readability, performance, or PEP8
-- **Agent Chat Mode** – LLM-powered, memory-aware conversations
-- **Markdown Export** – Save results for learning or review
-- **Local Execution** – No cloud, no OpenAI API — 100% offline
+- **LLM-Powered Chatbot** – Interact directly with your uploaded CSV
+- **Insight Generator** – Get trends, summaries, stats in plain English
+- **Dynamic Charts** – Auto-generate visuals like bar, line, and pie charts
+- **Download Options** – Export PNG charts or PDF reports
+- **RAG Pipeline** – Combine FAISS + LangChain for accurate answers
+- **100% Local Execution** – No OpenAI API needed (Mistral-7B offline)
 
 ---
 
 ## 🧠 Conceptual Study
-Want to dive deeper into how this works?
-👉 [Read the Full Conceptual Study →](https://github.com/Pre123140/AI_CODE_DEVELOPER_ASSISTANT/blob/main/AI_CODE_DEVELOPER_ASSISTANT.pdf)
+Want to explore how GenAI augments BI?
+👉 [Read the Full Conceptual Study →](https://github.com/Pre123140/PHISHING_-_CYBER_RISK_SCORING_DETECTION)
 
 ---
 
 ## 🛠️ Tech Stack
 - `mistral-7b-openorca.Q4_K_M.gguf` via GPT4All
-- `LangChain` with memory support
-- `Streamlit` UI (dual apps)
-- Python core: `ast`, `tempfile`, `markdown`, etc.
-
+- `LangChain` (Agents + FAISS)
+- `Streamlit` for the frontend UI
+- `Pandas`, `Matplotlib`, `Plotly` for charting
+- `fpdf` and `PIL` for PDF/PNG export
 
 ---
 
 ## 📁 Folder Structure
 ```
-AI_Code_Developer_Assistant/
-├── requirements.txt
-├── models/
-│   └── mistral-7b-openorca.Q4_K_M.gguf
-├── data/
-│   ├── example_buggy_code.py
-│   ├── example_insecure_code.py
-│   └── example_unoptimized_code.py
-├── reports/
-│   ├── *.csv, *.txt, *.py (auto-generated reports)
+bi_decision_support_agent/
+├── data/                        # Uploaded CSVs
+├── models/                     # LLM models (mistral-7b-v0.1.Q4_K_M)
 ├── src/
-│   ├── app.py                      # Rule-based version
-│   ├── ai_code_assistant_app.py   # LLM-powered assistant
-│   ├── code_analysis.py
-│   ├── code_optimizer.py
-│   ├── auto_debugger.py
-│   ├── llm_agent.py
-│   └── prompt_templates.py
+│   ├── ui.py                   # Streamlit UI for file upload and user input
+│   ├── data_processor.py       # Preprocessing of uploaded data
+│   ├── insight_generator.py    # Stats, summaries, key KPIs
+│   ├── chart_generator.py      # Dynamic visualizations
+│   ├── llm_agent.py            # RAG + LLM querying agent
+│   └── utils.py                # Helper functions for formatting, paths
+└──requirements.txt
 ```
 
 ---
-
 
 ## ⚙️ How to Run the Project
 
 ### 1. 📂 Clone the Repository
 ```bash
-git clone https://github.com/yourname/AI_Code_Developer_Assistant
-cd AI_Code_Developer_Assistant
+git clone https://github.com/yourname/bi_decision_support_agent
+cd bi_decision_support_agent
 ```
 
 ### 2. ✨ Set Up Environment
@@ -83,24 +75,24 @@ pip install -r requirements.txt
 ```
 
 ### 4. 🤖 Add Your LLM Model
-Place `mistral-7b-openorca.Q4_K_M.gguf` in the `/models/` folder.
+Place `mistral-7b-openorca.Q4_K_M.gguf` in the `/models/` directory.
 
-### 5. 🔹 Launch the App
+### 5. 🚀 Run the App
 ```bash
-streamlit run src/app.py                    # Static mode (no LLM)
-streamlit run src/ai_code_assistant_app.py  # Agentic mode (LLM)
+streamlit run src/ui.py
 ```
 
+Then upload any `.csv` file and start chatting or exploring!
 
 ---
 
-
+---
 
 ## ✨ Project Highlights
-- **Local-First AI**: No internet required — privacy-preserving
-- **Dual Mode**: Toggle between rule-based and LLM-powered analysis
-- **Multi-Agent Ready**: Modular structure for extending capabilities
-- **Developer-Friendly**: Markdown outputs, no API costs
+- **No Fixed Schema**: Works with any CSV, auto-detects columns
+- **Business-Ready**: Summarizes sales, profits, trends, and more
+- **Chat + Visuals**: Both conversational and chart-based output
+- **Offline-First**: Ideal for internal orgs with sensitive data
 
 ---
 
@@ -112,4 +104,3 @@ This project is open for educational use only. For commercial deployment, contac
 
 ## 📬 Contact
 If you'd like to learn more or collaborate on projects or other initiatives, feel free to connect on [LinkedIn](https://www.linkedin.com/in/prerna-burande-99678a1bb/) or check out my [portfolio site](https://youtheleader.com/).
-
