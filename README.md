@@ -1,6 +1,6 @@
 # 🧠 AI-Powered Code & Developer Assistant
 
-A local GenAI-powered coding agent that helps you **analyze, debug, and optimize Python code** — with or without LLMs. Designed for developers, learners, and security-conscious teams, it uses Mistral-7B (GGUF) to run completely offline.
+A GenAI-powered coding agent that helps you **analyze, debug, and optimize Python code** — with or without LLMs. Designed for developers, learners, and security-conscious teams, it uses Mistral-7B (GGUF) to run completely offline.
 
 ---
 
@@ -25,7 +25,7 @@ To create a dual-mode code assistant that:
 
 ## 🧠 Conceptual Study
 Want to dive deeper into how this works?
-👉 [Read the Full Conceptual Study →](#)
+👉 [Read the Full Conceptual Study →](https://github.com/Pre123140/AI_CODE_DEVELOPER_ASSISTANT/blob/main/AI_CODE_DEVELOPER_ASSISTANT.pdf)
 
 ---
 
