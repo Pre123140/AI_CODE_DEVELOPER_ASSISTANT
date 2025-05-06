@@ -63,25 +63,34 @@ AI_Code_Developer_Assistant/
 ---
 
 ## ⚙️ How to Run the Project
+## ⚙️ How to Run the Project
+
+### 1. 📂 Clone the Repository
 ```bash
-# Step 1: Clone the repository
-$ git clone https://github.com/yourname/AI_Code_Developer_Assistant
-$ cd AI_Code_Developer_Assistant
+git clone https://github.com/yourname/AI_Code_Developer_Assistant
+cd AI_Code_Developer_Assistant
+```
 
-# Step 2: Set up environment
-$ python -m venv venv
-$ source venv/bin/activate  # or venv\Scripts\activate on Windows
+### 2. ✨ Set Up Environment
+```bash
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+```
 
-# Step 3: Install dependencies
-$ pip install -r requirements.txt
+### 3. ⚖️ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
-# Step 4: Add your LLM model
+### 4. 🤖 Add Your LLM Model
 Place `mistral-7b-openorca.Q4_K_M.gguf` in the `/models/` folder.
 
-# Step 5: Run your preferred app
-$ streamlit run src/app.py                 # Static mode (no LLM)
-$ streamlit run src/ai_code_assistant_app.py  # Agentic mode (LLM)
+### 5. 🔹 Launch the App
+```bash
+streamlit run src/app.py                    # Static mode (no LLM)
+streamlit run src/ai_code_assistant_app.py  # Agentic mode (LLM)
 ```
+
 
 ---
 
