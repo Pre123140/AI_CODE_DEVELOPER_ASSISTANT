@@ -1,0 +1,2 @@
+⚠️ Variable 'item' might be used before assignment.
+⚠️ Variable 'price' might be used before assignment.

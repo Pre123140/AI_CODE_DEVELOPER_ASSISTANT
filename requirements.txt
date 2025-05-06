@@ -1,0 +1,7 @@
+streamlit
+langchain
+gpt4all
+markdown
+transformers
+pandas
+tqdm
