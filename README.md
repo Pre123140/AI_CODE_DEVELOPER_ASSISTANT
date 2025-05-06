@@ -25,7 +25,7 @@ To create a dual-mode code assistant that:
 
 ## 🧠 Conceptual Study
 Want to dive deeper into how this works?  
-👉 [Read the Full Conceptual Study →](#)
+👉 [Read the Full Conceptual Study →](https://github.com/Pre123140/AI_CODE_DEVELOPER_ASSISTANT/blob/main/AI_CODE_DEVELOPER_ASSISTANT.pdf)
 
 ---
 
