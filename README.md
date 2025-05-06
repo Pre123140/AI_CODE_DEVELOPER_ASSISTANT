@@ -1,6 +1,6 @@
 # 🧠 AI-Powered Code & Developer Assistant
 
-A GenAI-powered coding agent that helps you **analyze, debug, and optimize Python code** — with or without LLMs. Designed for developers, learners, and security-conscious teams, it uses Mistral-7B (GGUF) to run completely offline.
+A local GenAI-powered coding agent that helps you **analyze, debug, and optimize Python code** — with or without LLMs. Designed for developers, learners, and security-conscious teams, it uses `mistral-7b-openorca.Q4_K_M.gguf` to run completely offline.
 
 ---
 
@@ -30,10 +30,11 @@ Want to dive deeper into how this works?
 ---
 
 ## 🛠️ Tech Stack
-- `Mistral-7B (Q4_K_M, GGUF)` via GPT4All
+- `mistral-7b-openorca.Q4_K_M.gguf` via GPT4All
 - `LangChain` with memory support
 - `Streamlit` UI (dual apps)
 - Python core: `ast`, `tempfile`, `markdown`, etc.
+
 
 ---
 
@@ -70,17 +71,21 @@ $ cd AI_Code_Developer_Assistant
 # Step 2: Set up environment
 $ python -m venv venv
 $ source venv/bin/activate  # or venv\Scripts\activate on Windows
+
+# Step 3: Install dependencies
 $ pip install -r requirements.txt
 
-# Step 3: Add your LLM model
+# Step 4: Add your LLM model
 Place `mistral-7b-openorca.Q4_K_M.gguf` in the `/models/` folder.
 
-# Step 4: Run your preferred app
+# Step 5: Run your preferred app
 $ streamlit run src/app.py                 # Static mode (no LLM)
 $ streamlit run src/ai_code_assistant_app.py  # Agentic mode (LLM)
 ```
 
 ---
+
+
 
 ## ✨ Project Highlights
 - **Local-First AI**: No internet required — privacy-preserving
