@@ -1,108 +1,101 @@
+# 🧠 AI-Powered Code & Developer Assistant
 
-# 🧠 AI-Powered Code & Developer Agent
-
-A local GenAI-powered code assistant that helps you **explain, debug, and optimize Python code** — with or without LLMs. Built using Mistral-7B (GGUF), LangChain, and Streamlit, it runs entirely offline with two modes:
-
-### 🚀 Key Features
-
-- **Explain Mode** – Understand logic line-by-line
-- **Fix Mode** – Auto-debug code errors and improve logic
-- **Optimize Mode** – Refactor for better performance/readability
-- **Chat Mode** – Multi-turn AI tutor with memory
-- **File Upload + Markdown Export**
-- **Runs 100% Locally – No API, No Cloud**
+A local GenAI-powered coding agent that helps you **analyze, debug, and optimize Python code** — with or without LLMs. Designed for developers, learners, and security-conscious teams, it uses Mistral-7B (GGUF) to run completely offline.
 
 ---
 
-### 🛠️ Tech Stack
-
-- `Mistral-7B` (GGUF - Q4_K_M)
-- `LangChain` + `ConversationBufferMemory`
-- `GPT4All` local LLM runtime
-- `Streamlit` UI
-- Python core tools (`ast`, `tempfile`, `os`, etc.)
-
----
-
-### 📂 Dual Modes
-
-| Mode | File | Description |
-|------|------|-------------|
-| `app.py` | 🔧 Static App | Rule-based, no LLMs, fast code analysis |
-| `ai_code_assistant_app.py` | 🧠 Agentic App | LLM-based with Mistral-7B, chat-style memory |
+## 🎯 Project Objective
+To create a dual-mode code assistant that:
+- Understands and explains code behavior line-by-line
+- Automatically detects and fixes bugs in code
+- Refactors and optimizes scripts for readability and performance
+- Engages in contextual multi-turn conversations (Agent Mode)
 
 ---
 
-### 📦 Folder Structure
+## 🚀 Key Features
+- **Explain Mode** – Understand any Python code snippet
+- **Fix Mode** – Auto-debug common issues and broken logic
+- **Optimize Mode** – Refactor for readability, performance, or PEP8
+- **Agent Chat Mode** – LLM-powered, memory-aware conversations
+- **Markdown Export** – Save results for learning or review
+- **Local Execution** – No cloud, no OpenAI API — 100% offline
+
+---
+
+## 🧠 Conceptual Study
+Want to dive deeper into how this works?
+👉 [Read the Full Conceptual Study →](#)
+
+---
+
+## 🛠️ Tech Stack
+- `Mistral-7B (Q4_K_M, GGUF)` via GPT4All
+- `LangChain` with memory support
+- `Streamlit` UI (dual apps)
+- Python core: `ast`, `tempfile`, `markdown`, etc.
+
+---
+
+## 📁 Folder Structure
+```
 AI_Code_Developer_Assistant/
 ├── requirements.txt
-
 ├── models/
 │   └── mistral-7b-openorca.Q4_K_M.gguf
-
 ├── data/
 │   ├── example_buggy_code.py
 │   ├── example_insecure_code.py
 │   └── example_unoptimized_code.py
-
 ├── reports/
-│   ├── example_buggy_code_analysis.csv
-│   ├── example_buggy_code_debug_report.txt
-│   ├── example_insecure_code_analysis.csv
-│   ├── example_unoptimized_code_analysis.csv
-│   ├── example_unoptimized_code_optimized.py
-│   ├── inline_opt_temp_optimized.py
-│   ├── inline_struct_temp_analysis.csv
-│   ├── tmp6gnz615m_debug_report.txt
-│   ├── tmp331y4se3_debug_report.txt
-│   ├── tmpi9p_hsnn_debug_report.txt
-│   └── tmpxkdqb3ti_debug_report.txt
-
+│   ├── *.csv, *.txt, *.py (auto-generated reports)
 ├── src/
-│   ├── app.py
-│   ├── ai_code_assistant_app.py
-│   ├── auto_debugger.py
+│   ├── app.py                      # Rule-based version
+│   ├── ai_code_assistant_app.py   # LLM-powered assistant
 │   ├── code_analysis.py
 │   ├── code_optimizer.py
+│   ├── auto_debugger.py
 │   ├── llm_agent.py
 │   └── prompt_templates.py
-
-└── README.md
-
-
-
-### ⚙️ How to Run
-
-1. Clone this repo and create a virtual environment.
-2. Download Mistral model (`mistral-7b-openorca.Q4_K_M.gguf`) and place it in `/models`.
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-
-
-Run either app:
-Static: streamlit run app.py
-Agent: streamlit run ai_code_assistant_app.py
-
-
-
-Project Highlights
-Local-first AI — ideal for secure or educational environments.
-No OpenAI or paid API required.
-Designed for learners, freelancers, educators, and AI engineers.
-Modular — extendable to other languages or multi-agent systems.
-
-
-Conceptual Study
-Read the full deep-dive behind this project: Conceptual Study →
-
- Author
-Prerna Burande
-AI | Strategy | Portfolio Engineering
-
-
-📄 License
-MIT — for personal/educational use only. Contact for commercial licensing.
+```
 
 ---
+
+## ⚙️ How to Run the Project
+```bash
+# Step 1: Clone the repository
+$ git clone https://github.com/yourname/AI_Code_Developer_Assistant
+$ cd AI_Code_Developer_Assistant
+
+# Step 2: Set up environment
+$ python -m venv venv
+$ source venv/bin/activate  # or venv\Scripts\activate on Windows
+$ pip install -r requirements.txt
+
+# Step 3: Add your LLM model
+Place `mistral-7b-openorca.Q4_K_M.gguf` in the `/models/` folder.
+
+# Step 4: Run your preferred app
+$ streamlit run src/app.py                 # Static mode (no LLM)
+$ streamlit run src/ai_code_assistant_app.py  # Agentic mode (LLM)
+```
+
+---
+
+## ✨ Project Highlights
+- **Local-First AI**: No internet required — privacy-preserving
+- **Dual Mode**: Toggle between rule-based and LLM-powered analysis
+- **Multi-Agent Ready**: Modular structure for extending capabilities
+- **Developer-Friendly**: Markdown outputs, no API costs
+
+---
+
+## 📜 License
+
+This project is open for educational use only. For commercial deployment, contact the author.
+
+---
+
+## 📬 Contact
+If you'd like to learn more or collaborate on projects or other initiatives, feel free to connect on [LinkedIn](https://www.linkedin.com/in/prerna-burande-99678a1bb/) or check out my [portfolio site](https://youtheleader.com/).
 
