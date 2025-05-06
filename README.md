@@ -65,7 +65,7 @@ AI_Code_Developer_Assistant/
 
 ### 1. 📂 Clone the Repository
 ```bash
-git clone https://github.com/yourname/AI_Code_Developer_Assistant
+git clone https://github.com/Pre123140/AI_CODE_DEVELOPER_ASSISTANT
 cd AI_Code_Developer_Assistant
 ```
 
